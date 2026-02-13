@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #ffffff;
+
+}
+
+@layer base {
+  body {
+    /* background-color: var(--color-background);
+    color: var(--color-foreground); */
+    font-family: "inter", sans-serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+}
