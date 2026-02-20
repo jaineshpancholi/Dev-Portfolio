@@ -37,7 +37,7 @@ export const Hero = () => {
 
                 </div>
                 {/* right column - text content */}
-                <div className="order-1 lg:order-2 bg-[#2F2F2F] border-[#1b2c68a0] relative rounded-lg">
+                <div className="order-1 lg:order-2 bg-[#1e293b] border-[#1b2c68a0] relative rounded-lg">
                     <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
                         <code className="font-mono text-xs md:text-sm lg:text-base">
                             <div className="blink">

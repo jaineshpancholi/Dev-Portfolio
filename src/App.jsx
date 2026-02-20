@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {Navbar} from "@/layout/Navbar";
 import {Hero} from "@/section/Hero";
 import { AboutSection } from './section/About';
-import ExperienceSection from './section/Experience';
+import ExperienceSection from './section/Experience/Experience';
 
 function App() {
   const [count, setCount] = useState(0)

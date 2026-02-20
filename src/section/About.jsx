@@ -4,7 +4,7 @@ export const AboutSection= () => {
     return (
         <div id="about" className="my-12 relative">
             <div className="hidden lg:flex flex-col items-center absolute top-24 -left-8">
-                <span className="text-white bg-[#2F2F2F] w-fit rotate-270 p-2 px-10 text-xl rounded-md">About Me</span>
+                <span className="text-white bg-[#1e293b] w-fit rotate-270 p-2 px-10 text-xl rounded-md">About Me</span>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16"> 
                 <div className="order-2 lg:order-1">
