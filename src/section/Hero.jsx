@@ -2,19 +2,14 @@ import { personalData } from "../../utils/data/personal-data";
 
 export const Hero = () => {
     return (
-        <section className="relative h-[70vh] flex  items-center overflow-hidden py-4 lg:py-12">
+        <section className="relative lg:h-[70vh]  flex flex-col items-center overflow-hidden pt-24">
             {/* background image */}
-            
-                <img src="/image/c1.jpg"
-                    alt="hero image"
-                    className="absolute -top-[98px] -z-10">
-                </img>
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background" />
-            
-
-
-
+            <img src="/image/c1.jpg"
+                alt="hero image"
+                className="absolute inset-0 w-full h-full object-cover -z-10">
+            </img>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background" />
             {/* content */}
             <div className="relative container z-10 mx-auto grid grid-cols-1 items-center lg:grid-cols-2 lg:gap-12 gap-y-8 ">
                 {/* left column - text content */}
@@ -26,13 +21,24 @@ export const Hero = () => {
 
                     </h1>
                     <div className="my-12 flex items-center gap-5">
-                        <a></a>
+                        <a className="transition-all text-[#0a66c2] hover:scale-125 duration-300" href={personalData.github} target="_blank" aria-label="GitHub">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" width="32"
+                                height="32" />
+                        </a>
+                        <a className="transition-all text-[#0a66c2] hover:scale-125 duration-300" href={personalData.linkedIn} target="_blank"
+                            aria-label="LinkedIn">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="32"
+                                height="32" />
+                        </a>
+                    </div>
+                    <div className="flex items-center gap-5">
+                        <a><button className="px-3 md:px-8 py-3 md:py-4 rounded-full border-none text-center md:font-semibold px-3 text-sm uppercase bg-[#0A6FFD] hover:bg-[#1d4ed8] flex gap-1 hover:gap-3 duration-200 font-medium text-white ">Contact me</button></a>
                     </div>
 
                 </div>
                 {/* right column - text content */}
                 <div className="order-1 lg:order-2 bg-[#2F2F2F] border-[#1b2c68a0] relative rounded-lg">
-                   <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+                    <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
                         <code className="font-mono text-xs md:text-sm lg:text-base">
                             <div className="blink">
                                 <span className="mr-2 text-pink-500">const</span>

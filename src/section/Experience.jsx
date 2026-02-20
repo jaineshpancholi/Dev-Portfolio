@@ -1,3 +1,9 @@
-export const Hero = () => {
-    return <section></section>;
+export const ExperienceSection = () => {
+    return (
+        <div>
+            
+        </div>
+    );
 }
+
+export default ExperienceSection;
