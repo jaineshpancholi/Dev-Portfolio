@@ -3,6 +3,8 @@ import {Navbar} from "@/layout/Navbar";
 import {Hero} from "@/section/Hero";
 import { AboutSection } from './section/About';
 import ExperienceSection from './section/Experience/Experience';
+import './css/globals.css';
+import Skills from './section/Skill';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,7 @@ function App() {
         <Hero/>
         <AboutSection/>
         <ExperienceSection/>
+        <Skills/>
       </main>
     </div>
   )

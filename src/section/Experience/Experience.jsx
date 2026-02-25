@@ -1,5 +1,8 @@
 import { experiences } from "../../../utils/data/experience";
 import ExpCard from "./Exp-card.jsx";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 
 export const ExperienceSection = () => {
     return (
@@ -18,7 +21,7 @@ export const ExperienceSection = () => {
                     {experiences.map((experience, index) => (
                         <div key={index}
                             id={`sticky-card-${index + 1}`}
-                            className="sticky-card w-full mx-auto max-w-2xl sticky"
+                            className="sticky-card w-full mx-auto max-w-2xl sticky top-32"
                         >
                             <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
                                 <ExpCard exp={experience} />
